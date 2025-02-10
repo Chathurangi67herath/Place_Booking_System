@@ -4,13 +4,13 @@ import HallCard from "./HallCard";
 export default function DashboardBody() {
   return (
     <Box
-      ml={{ base: 0, md: 60 }}
+      ml={{ base: 0 }}
       bg={useColorModeValue("gray.100", "gray.900")}
       p="4"
       minH={"85vh"}
     >
       <Box pl="10" pr="10">
-        <Grid templateColumns="repeat(3, 2fr)" gap={6}>
+        <Grid className="grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 2xl:grid-cols-5">
           <GridItem w="100%">
             <HallCard
               imgsrc="https://5.imimg.com/data5/MH/AU/LZ/SELLER-9457619/complete-interior-technical-services-for-auditoriums-cinemas-schools-500x500.jpg"
