@@ -8,12 +8,14 @@ import Contacts from "./Components/Contacts";
 import DashboardBody from "./Components/DashboardBody";
 import RecentBookings from "./Components/RecentBookings";
 import CommonPage from "./pages/CommonPage";
+import NavBar from "./pages/NavBar";
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Router>
-        <CommonPage></CommonPage>
+        {/* <CommonPage></CommonPage> */}
+        <NavBar></NavBar>
         <Routes>
           <Route exact path="/" element={<DashboardBody />} />
           <Route exact path="/hallbooking" element={<BookingBody />} />
