@@ -32,7 +32,7 @@ export default function RecentBookings() {
 
   return (
     <Box
-      ml={{ base: 0, md: 60 }}
+      ml={{ base: 0 }}
       bg={useColorModeValue("gray.100", "gray.900")}
       p="4"
       minH={"85vh"}

@@ -85,7 +85,7 @@ export default function HallCard(props) {
           style={{ textDecoration: "none" }}
         >
           <Button colorScheme="linkedin" mt="6" w="full" h="12">
-            Book now
+            Book Now
           </Button>
         </Link>
       </Box>

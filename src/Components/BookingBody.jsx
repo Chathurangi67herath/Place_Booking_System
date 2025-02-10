@@ -87,7 +87,7 @@ export default function BookingBody() {
 
   return (
     <Box
-      ml={{ base: 0, md: 60 }}
+      ml={{ base: 0}}
       bg={useColorModeValue("gray.100", "gray.900")}
       p="4"
       minH={"85vh"}
@@ -103,9 +103,11 @@ export default function BookingBody() {
           <Text pt="4" fontSize={"2xl"} fontWeight="semibold">
             Booking details ({hallname})
           </Text>
-          <HStack pt="10" spacing={20}>
+          <HStack pt="10" spacing={20} >
             {/* <form action="post" method="/sendData"> */}
-            <HStack>
+            <HStack >
+            <div className="grid grid-cols-1 gap-y-5 md:flex md:gap-2 lg:gap-5">
+              <div>
               <DatePicker
                 name="date"
                 minDate={new Date()}
@@ -115,7 +117,11 @@ export default function BookingBody() {
                 }}
                 value={datevalue}
               />
-              <TimeRangePicker
+                
+              </div>
+             
+             <div>
+             <TimeRangePicker
                 name="time"
                 minTime="8:00"
                 maxTime="21:00"
@@ -129,12 +135,21 @@ export default function BookingBody() {
                 }}
                 value={timevalue}
               />
-            </HStack>
-            <Link style={{ textDecoration: "none" }}>
+             </div>
+             <div>
+             <Link style={{ textDecoration: "none" }}>
               <Button colorScheme="linkedin" onClick={checkAvail}>
                 Check Availability
               </Button>
             </Link>
+             </div>
+            </div>
+            </HStack>
+            {/* <Link style={{ textDecoration: "none" }}>
+              <Button colorScheme="linkedin" onClick={checkAvail}>
+                Check Availability
+              </Button>
+            </Link> */}
             {/* </form> */}
           </HStack>
 
@@ -176,7 +191,8 @@ export default function BookingBody() {
             Details
           </Text>
           <HStack>
-            <Box mr="10">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-3 md:flex lg:gap-x-8">
+            <Box >
               <Image
                 rounded={"lg"}
                 height={210}
@@ -211,6 +227,7 @@ export default function BookingBody() {
               </Stack>
             </Box>
             <Box></Box>
+            </div>
           </HStack>
         </Box>
         <Box

@@ -3,7 +3,7 @@ import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 export default function Contacts() {
   return (
     <Box
-      ml={{ base: 0, md: 60 }}
+      ml={{ base: 0}}
       bg={useColorModeValue("gray.100", "gray.900")}
       p="4"
       minH={"85vh"}
@@ -25,11 +25,11 @@ export default function Contacts() {
           For any queries
         </Text>
         <Text mt="5">
-          Contact Mr. Nagabhushan Gowda
+          Contact Miss.Chamodi Herath
           <br />
-          Phone no : +91 98765 54321
+          Phone no : +94 762836728
           <br />
-          Email : maintenanceoffice@rit.edu
+          Email : herachamodi@gmail.com
         </Text>
       </Box>
     </Box>
