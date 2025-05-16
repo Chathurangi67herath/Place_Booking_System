@@ -7,20 +7,24 @@ import BookingBody from "./Components/BookingBody";
 import Contacts from "./Components/Contacts";
 import DashboardBody from "./Components/DashboardBody";
 import RecentBookings from "./Components/RecentBookings";
-import CommonPage from "./pages/CommonPage";
-import NavBar from "./pages/NavBar";
+// import CommonPage from "./pages/CommonPage";
+// import NavBar from "./pages/NavBar";
+import Login from "./Components/Login";
+import Register from "./Components/SignUp";
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Router>
         {/* <CommonPage></CommonPage> */}
-        <NavBar></NavBar>
+        {/* <NavBar></NavBar> */}
         <Routes>
           <Route exact path="/" element={<DashboardBody />} />
           <Route exact path="/hallbooking" element={<BookingBody />} />
           <Route exact path="/contacts" element={<Contacts />} />
           <Route exact path="/recentBookings" element={<RecentBookings />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/register" element={<Register />} />
         </Routes>
       </Router>
     </ChakraProvider>

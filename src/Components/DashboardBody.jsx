@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, useColorModeValue } from "@chakra-ui/react";
 import HallCard from "./HallCard";
+import NavBar from "../pages/NavBar";
 
 const placeInformation = [
   { imgsrc: './wala.jpg', block: 'OPEN', hall: 'Panibharatha Open Air Theater', capacity:'1000' },
@@ -17,6 +18,8 @@ const placeInformation = [
 
 export default function DashboardBody() {
   return (
+    <>
+      <NavBar></NavBar>
     <Box
       ml={{ base: 0 }}
       bg={useColorModeValue("gray.100", "gray.900")}
@@ -37,6 +40,6 @@ export default function DashboardBody() {
                             ))}
         </Grid>
       </Box>
-    </Box>
+    </Box></>
   );
 }

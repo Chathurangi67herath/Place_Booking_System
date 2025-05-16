@@ -1,7 +1,9 @@
 import { Box, Text, useColorModeValue } from "@chakra-ui/react";
-
+import NavBar from "../pages/NavBar";
 export default function Contacts() {
   return (
+         <>
+              <NavBar></NavBar>
     <Box
       ml={{ base: 0}}
       bg={useColorModeValue("gray.100", "gray.900")}
@@ -32,6 +34,6 @@ export default function Contacts() {
           Email : herachamodi@gmail.com
         </Text>
       </Box>
-    </Box>
+    </Box> </>
   );
 }

@@ -18,6 +18,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import NavBar from "../pages/NavBar";
 
 export default function RecentBookings() {
   const [datas, setDatas] = useState([]);
@@ -31,6 +32,8 @@ export default function RecentBookings() {
   }, []);
 
   return (
+     <>
+          <NavBar></NavBar>
     <Box
       ml={{ base: 0 }}
       bg={useColorModeValue("gray.100", "gray.900")}
@@ -87,6 +90,6 @@ export default function RecentBookings() {
           </TableContainer>
         )}
       </Box>
-    </Box>
+    </Box>  </>
   );
 }
