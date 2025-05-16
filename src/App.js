@@ -11,6 +11,9 @@ import RecentBookings from "./Components/RecentBookings";
 // import NavBar from "./pages/NavBar";
 import Login from "./Components/Login";
 import Register from "./Components/SignUp";
+import BookingCalendar from "./Components/BookingCalender";
+
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
           <Route exact path="/hallbooking" element={<BookingBody />} />
           <Route exact path="/contacts" element={<Contacts />} />
           <Route exact path="/recentBookings" element={<RecentBookings />} />
+          <Route exact path="/bookingCalender" element={<BookingCalendar />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
         </Routes>
