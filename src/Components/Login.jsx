@@ -65,7 +65,10 @@ const Login = () => {
               type="submit"
               className="w-full py-2 text-white transition bg-blue-600 rounded-md hover:bg-blue-700"
             >
+              <a href="/" className="">
               Sign In
+            </a>
+              
             </button>
           </form>
           <p className="mt-4 text-center text-gray-600">

@@ -21,6 +21,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DatePicker from "react-date-picker";
 import { useLocation } from "react-router-dom";
+import NavBar from "../pages/NavBar";
 
 export default function BookingBody() {
   const [datevalue, onDateChange] = useState(new Date());
@@ -34,16 +35,52 @@ export default function BookingBody() {
   const deets = location.state;
   const hallname = location.state.hall;
 
+  // useEffect(() => {
+  //   axios
+  //     .get(process.env.REACT_APP_SERVER_URL + "/getData", {
+  //       params: {
+  //         hall: hallname,
+  //       },
+  //     })
+  //     .then(function (res) {
+  //       setData(res.data);
+  //     });
+  // }, [booked]);
   useEffect(() => {
-    axios
-      .get(process.env.REACT_APP_SERVER_URL + "/getData", {
-        params: {
-          hall: hallname,
-        },
-      })
-      .then(function (res) {
-        setData(res.data);
-      });
+    // Mock data instead of axios.get
+    const mockData = [
+      
+      {
+        "hall": "Conference Hall A",
+        "date": "5/20/2025",
+        "event" : "Pinihibiri Diyawara",
+        "startTime": "09:00",
+        "endTime": "11:00"
+      },
+      {
+        "hall": "Conference Hall A",
+        "date": "5/21/2025",
+        "event" : "Adawwa",
+        "startTime": "13:00",
+        "endTime": "15:00"
+      },
+      {
+        "hall": "Conference Hall B",
+        "date": "5/20/2025",
+        "event" : "Himidiriya",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      {
+        "hall": "Conference Hall A",
+        "date": "5/22/2025",
+        "event" : "26th Convocation",
+        "startTime": "08:00",
+        "endTime": "10:00"
+      }
+      // ... more bookings
+    ];
+    setData(mockData);
   }, [booked]);
 
   function sendNewBooking() {
@@ -86,6 +123,8 @@ export default function BookingBody() {
   }
 
   return (
+      <>
+                  <NavBar></NavBar>
     <Box
       ml={{ base: 0}}
       bg={useColorModeValue("gray.100", "gray.900")}
@@ -101,7 +140,7 @@ export default function BookingBody() {
           bg={useColorModeValue("white", "gray.500")}
         >
           <Text pt="4" fontSize={"2xl"} fontWeight="semibold">
-            Booking details ({hallname})
+            Booking Details ({hallname})
           </Text>
           <HStack pt="10" spacing={20} >
             {/* <form action="post" method="/sendData"> */}
@@ -171,8 +210,11 @@ export default function BookingBody() {
                     colorScheme="linkedin"
                     mt="10"
                   >
-                    Book Hall{" "}
+                    {/* Book Hall{" "} */}
+
+                    <a href="/bookingCalender" className=" hover:underline">Book Hall</a>
                   </Button>
+                 
                 </Box>
               )
             ) : (
@@ -239,14 +281,15 @@ export default function BookingBody() {
           bg={useColorModeValue("white", "gray.500")}
         >
           <Text mt="5" mb="5" p="2" fontWeight={"semibold"} fontSize="2xl">
-            Booking history
+            Booking Details
           </Text>
           <TableContainer>
             <Table variant="simple">
               <Thead>
                 <Tr>
-                  <Th>Hall</Th>
+                  {/* <Th>Hall</Th> */}
                   <Th>Date</Th>
+                  <Th>Event</Th>
                   <Th>Start time</Th>
                   <Th>End time</Th>
                 </Tr>
@@ -255,8 +298,9 @@ export default function BookingBody() {
                 {data.map((i) => {
                   return (
                     <Tr>
-                      <Td>{i.hall}</Td>
+                      {/* <Td>{i.hall}</Td> */}
                       <Td>{i.date}</Td>
+                      <Td>{i.event}</Td>
                       <Td>{i.startTime}</Td>
                       <Td>{i.endTime}</Td>
                     </Tr>
@@ -267,6 +311,6 @@ export default function BookingBody() {
           </TableContainer>
         </Box>
       </Box>
-    </Box>
+    </Box> </>
   );
 }
