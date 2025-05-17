@@ -12,6 +12,7 @@ import RecentBookings from "./Components/RecentBookings";
 import Login from "./Components/Login";
 import Register from "./Components/SignUp";
 import BookingCalendar from "./Components/BookingCalender";
+import NotificationList from "./Components/Notification";
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/bookingCalender" element={<BookingCalendar />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
+           <Route exact path="/notification" element={<NotificationList />} />
         </Routes>
       </Router>
     </ChakraProvider>
