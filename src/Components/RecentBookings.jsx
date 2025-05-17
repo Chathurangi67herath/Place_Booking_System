@@ -36,61 +36,69 @@ export default function RecentBookings() {
       const mockData = [
         
         {
-          "hall": "Conference Hall A",
+          "hall": "Panibharatha Open Air Theater",
           "date": "5/20/2025",
           "event" : "Pinihibiri Diyawara",
-          "startTime": "09:00",
-          "endTime": "11:00"
+          "startTime": "18:00",
+          "endTime": "24:00"
         },
         {
-          "hall": "Conference Hall A",
+          "hall": "Main Canteen (Matta Canteen)",
           "date": "5/21/2025",
           "event" : "Adawwa",
-          "startTime": "13:00",
-          "endTime": "15:00"
+          "startTime": "18:00",
+          "endTime": "23:00"
         },
         {
-          "hall": "Conference Hall B",
-          "date": "5/20/2025",
-          "event" : "Himidiriya",
-          "startTime": "10:00",
-          "endTime": "12:00"
-        },
-        {
-          "hall": "Conference Hall A",
+          "hall": "Panibharatha Open Air Theater",
           "date": "5/22/2025",
+          "event" : "Himidiriya",
+          "startTime": "17:00",
+          "endTime": "24:00"
+        },
+        {
+          "hall": "D.Somasundara Auditorium",
+          "date": "5/23/2025",
           "event" : "26th Convocation",
           "startTime": "08:00",
-          "endTime": "10:00"
+          "endTime": "16:00"
         }
         ,
         {
-          "hall": "Conference Hall A",
-          "date": "5/20/2025",
-          "event" : "Pinihibiri Diyawara",
+          "hall": "Pool Side",
+          "date": "5/24/2025",
+          "event" : "Blood Donation Camp",
           "startTime": "09:00",
-          "endTime": "11:00"
-        },
-        {
-          "hall": "Conference Hall A",
-          "date": "5/21/2025",
-          "event" : "Adawwa",
-          "startTime": "13:00",
-          "endTime": "15:00"
-        },
-        {
-          "hall": "Conference Hall B",
-          "date": "5/20/2025",
-          "event" : "Himidiriya",
-          "startTime": "10:00",
           "endTime": "12:00"
         },
         {
-          "hall": "Conference Hall A",
-          "date": "5/22/2025",
-          "event" : "26th Convocation",
+          "hall": "Main Ground (Matta Ground)",
+          "date": "5/24/2025",
+          "event" : "Inter University Games",
           "startTime": "08:00",
-          "endTime": "10:00"
+          "endTime": "16:00"
+        },
+        {
+          "hall": "Mahagedara Auditorium",
+          "date": "5/30/2025",
+          "event" : "End Examination - External",
+          "startTime": "08:00",
+          "endTime": "12:00"
+        }
+        ,
+        {
+          "hall": "Art Center",
+          "date": "06/06/2025",
+          "event" : "Himidiriya - Practice",
+          "startTime": "16:00",
+          "endTime": "22:00"
+        },
+        {
+          "hall": "Hunduwa Ground",
+          "date": "06/20/2025",
+          "event" : "IPL - FOM",
+          "startTime": "08:00",
+          "endTime": "14:00"
         }
         // ... more bookings
       ];
