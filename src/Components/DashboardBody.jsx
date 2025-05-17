@@ -3,9 +3,15 @@ import HallCard from "./HallCard";
 import NavBar from "../pages/NavBar";
 
 const placeInformation = [
-  { imgsrc: './wala.jpg', block: 'OPEN', hall: 'Panibharatha Open Air Theater', capacity:'1000' },
+  { imgsrc: './wala.jpg', block: 'OPEN', hall: 'Panibharatha Open Air Theater', capacity:'2500' },
 {  imgsrc:"./pool.jpg", block:"OPEN", hall:"Pool Side", capacity:"100"},
-{ imgsrc:"./socailAudi.png",block:"INSIDE",hall:"Social Science - Auditorium",capacity:"2000"},
+{ imgsrc:"./socailAudi.png",block:"INSIDE",hall:"D.Somasundara Auditorium",capacity:"2000"},
+{ imgsrc:"./japan_canteen.jpeg",block:"INSIDE",hall:"Japan Canteen",capacity:"50"},
+{ imgsrc:"./matta_canteen.jpeg",block:"INSIDE",hall:"Main Canteen (Matta Canteen)",capacity:"50"},
+{ imgsrc:"./main_ground.jpeg",block:"OPEN",hall:"Main Ground (Matta Ground)",capacity:""},
+{ imgsrc:"./mahagerada_audi.jpeg",block:"INSIDE",hall:"Mahagedara Auditorium",capacity:"1000"},
+{ imgsrc:"./art_center.webp",block:"INSIDE",hall:"Art Center",capacity:"50"},
+{ imgsrc:"./hunduwa.jpeg",block:"OPEN",hall:"Hunduwa Ground",capacity:""},
 { imgsrc: 'https://image.wedmegood.com/resized/450X/uploads/member/693397/1567247859_Screenshot_6.jpg', block: 'HERITAGE', hall: 'BOARD MEETING ROOM', capacity:'100' },
 {  imgsrc:"https://5.imimg.com/data5/MH/AU/LZ/SELLER-9457619/complete-interior-technical-services-for-auditoriums-cinemas-schools-500x500.jpg", block:"ESB", hall:"ESB BIG SEMINAR HALL", capacity:"500"},
 { imgsrc:"https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uZmVyZW5jZSUyMGhhbGx8ZW58MHx8MHx8&w=1000&q=80",block:"ESB",hall:"ESB SEMINAR HALL 2",capacity:"300"},
