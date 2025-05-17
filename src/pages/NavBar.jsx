@@ -9,7 +9,7 @@ const user = {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
-  { name: "All Places", href: "/", current: true },
+  { name: "All Places", href: "/", current: false },
   { name: "Recently Booking", href: "/recentBookings", current: false },
   // { name: 'Booking Calendar', href: '/bookingCalender', current: false },
   { name: "Contact", href: "/contacts", current: false },
